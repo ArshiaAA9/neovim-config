@@ -13,10 +13,13 @@ return {
         cpp = { 'clang_format' },
         python = { 'isort', 'black' },
         javascript = { 'prettierd', 'prettier', stop_after_first = true },
+        typescript = { 'prettier' },
+        typescriptreact = { 'prettier' },
         css = { 'prettier' }, -- CSS
         scss = { 'prettier' }, -- SCSS
         less = { 'prettier' }, -- Less
         html = { 'prettier' }, -- Format HTML with Prettier
+        json = {}, -- Empty = no formatter
       },
       format_on_save = {
         timeout_ms = 500,
