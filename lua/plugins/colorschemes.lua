@@ -25,17 +25,4 @@ return {
       -- vim.api.nvim_set_hl(0, 'SignColumn', { bg = 'none' })
     end,
   },
-  {
-    'catppuccin/nvim',
-    enabled = false,
-    name = 'catppuccin',
-    priority = 1000,
-    config = function()
-      require('catppuccin').setup {
-        flavour = 'macchiato',
-        transparent_background = true,
-      }
-      vim.cmd.colorscheme 'catppuccin'
-    end,
-  },
 }

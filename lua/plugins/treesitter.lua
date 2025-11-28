@@ -7,7 +7,22 @@ return {
     main = 'nvim-treesitter.configs', -- Sets main module to use for opts
     -- [[ Configure Treesitter ]] See `:help nvim-treesitter`
     opts = {
-      ensure_installed = { 'bash', 'c', 'cpp', 'doxygen', 'diff', 'html', 'lua', 'luadoc', 'markdown', 'markdown_inline', 'query', 'vim', 'vimdoc', 'make' },
+      ensure_installed = {
+        'bash',
+        'c',
+        'cpp',
+        'doxygen',
+        'diff',
+        'html',
+        'lua',
+        'luadoc',
+        'markdown',
+        'markdown_inline',
+        'query',
+        'vim',
+        'vimdoc',
+        'make',
+      },
       auto_install = true,
       highlight = {
         enable = true,
@@ -15,13 +30,6 @@ return {
       },
       autotag = { enable = true },
       indent = { enable = true, disable = { 'ruby' } },
-    },
-  },
-  'luckasRanarison/tree-sitter-hyprlang',
-  dependencies = { 'nvim-treesitter/nvim-treesitter' },
-  opts = {
-    vim.filetype.add {
-      pattern = { ['.*/hypr/.*%.conf'] = 'hyprlang' },
     },
   },
 }
