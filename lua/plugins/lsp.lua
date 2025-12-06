@@ -161,6 +161,8 @@ return {
           filetypes = { 'cmake', 'CMakeLists.txt' }, -- Explicitly specify file types
           single_file_support = true, -- Allow activation on single files (like CMakeLists.txt)
         },
+        glsl_analyzer = {},
+        glsls = {},
         gopls = {},
         pyright = {},
         rust_analyzer = {},

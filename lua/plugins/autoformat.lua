@@ -11,6 +11,7 @@ return {
       formatters_by_ft = {
         lua = { 'stylua' },
         cpp = { 'clang_format' },
+        arduino = { 'clang_format' },
         python = { 'isort', 'black' },
         javascript = { 'prettierd', 'prettier', stop_after_first = true },
         typescript = { 'prettier' },
