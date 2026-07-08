@@ -157,13 +157,10 @@ return {
             '--clang-tidy',
           },
         },
-        cmake_language_server = {
-          filetypes = { 'cmake', 'CMakeLists.txt' }, -- Explicitly specify file types
-          single_file_support = true, -- Allow activation on single files (like CMakeLists.txt)
-        },
         glsl_analyzer = {},
         glsls = {},
         gopls = {},
+        gdscript = {},
         pyright = {},
         rust_analyzer = {},
         ts_ls = {},

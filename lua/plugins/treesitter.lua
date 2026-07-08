@@ -8,6 +8,9 @@ return {
     -- [[ Configure Treesitter ]] See `:help nvim-treesitter`
     opts = {
       ensure_installed = {
+        'gdscript',
+        'godot_resource',
+        'gdshader',
         'bash',
         'c',
         'cpp',

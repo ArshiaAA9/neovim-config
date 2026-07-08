@@ -9,6 +9,7 @@ return {
     },
     opts = {
       formatters_by_ft = {
+        gdscript = { 'gdformat' },
         lua = { 'stylua' },
         cpp = { 'clang_format' },
         arduino = { 'clang_format' },
