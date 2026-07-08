@@ -12,6 +12,11 @@ vim.opt.relativenumber = true -- Show relative line numbers
 vim.opt.mouse = 'a' -- Enable mouse support
 vim.opt.showmode = false -- Disable mode display
 
+vim.opt.shiftwidth = 4
+vim.opt.tabstop = 4
+vim.opt.expandtab = true
+vim.opt.smartindent = true
+
 -- Enable break indent
 vim.opt.breakindent = true
 
