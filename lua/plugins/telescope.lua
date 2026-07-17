@@ -51,11 +51,19 @@ return {
         -- You can put your default mappings / updates / etc. in here
         --  All the info you're looking for is in `:help telescope.setup()`
         --
-        -- defaults = {
-        --   mappings = {
-        --     i = { ['<c-enter>'] = 'to_fuzzy_refine' },
-        --   },
-        -- },
+        defaults = {
+          preview = {
+            ts_highlight = false, -- disable treesitter in previews
+          },
+          -- Add this to be extra safe
+          buffer_previewer_maker = function(filepath, bufnr, opts)
+            opts = opts or {}
+            require('telescope.previewers').buffer_previewer_maker(filepath, bufnr, {
+              use_ft_detect = false, -- extra safety
+              ts_highlight = false,
+            })
+          end,
+        },
         -- pickers = {}
         extensions = {
           ['ui-select'] = {

@@ -1,19 +1,10 @@
 return {
   {
-    'norcalli/nvim-colorizer.lua',
+    'brenoprata10/nvim-highlight-colors',
     opts = {
-      ['*'] = { -- Apply these settings to ALL filetypes
-        RGB = true,
-        RRGGBB = true,
-        css = false,
-        names = false,
-        no_names = true,
-        RRGGBBAA = true,
-        rgb_fn = true,
-        hsl_fn = true,
-        -- css = true,
-        -- css_fn = true,
-      },
+      render = 'background', -- background is usually the most intuitive
+      enable_named_colors = false, -- often too noisy
+      enable_tailwind = false, -- turn on only if you need it
     },
   },
 }
